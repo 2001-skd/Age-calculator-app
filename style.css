@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.age_calculator{
+  width:500px;
+  background-color: white !important;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px 20px 50px 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.full-section{
+  background:#F0F0F0;
+  height: 100vh !important;
+}
+
+label{
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #929292;
+}
+
+input{
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+
+}
+
+input:focus, input:hover{
+  border: 2px solid #864CFF !important;
+  cursor:pointer !important;
+  border-radius: 2px !important;
+  box-shadow: 2px 4px 9px 0px rgba(245,233,233,0.75) inset;
+-webkit-box-shadow: 2px 4px 9px 0px rgba(245,233,233,0.75) inset;
+-moz-box-shadow: 2px 4px 9px 0px rgba(245,233,233,0.75) inset;
+}
+
+.arrow{
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  background-color: #864CFF;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+}
+
+.arrow:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+.arrow i{
+  color: white !important;
+}
+
+hr{
+  margin-top: 40px;
+}
+
+.years p,
+.moths p,
+.days p{
+font-size: 30px;
+color: black;
+font-weight: bold;
+
+}
+
+.years span,
+.moths span,
+.days span{
+font-size: 30px;
+color: #864CFF;
+margin-left:5px;
+font-weight: bold;
+font-style: italic;
+}
+
+@media all and (max-width:600px){
+  .age_calculator{
+    width: 350px;
+  }
+
+  .full-section{
+    align-items: start !important;
+    padding: 20px;
+  }
+}
